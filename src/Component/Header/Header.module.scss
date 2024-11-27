@@ -1,0 +1,75 @@
+.header{
+    background-image: url(/HeaderLogo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #E73AB8;
+ 
+}
+.wrapper{
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+
+}
+
+.box__logo{
+  display: flex;
+    max-width: 300px;
+    gap: 20px;
+    h1{
+color: white;
+    }
+    Span{
+    font-style: italic;
+    font-weight: 800;
+    font-size: 50px;
+    }
+}
+.logo{
+    width: 100px;
+
+}
+.menu{
+    display: flex;
+    writing-mode: vertical-rl;
+    width: max-content;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    a{
+        padding: 20px;
+        font-size: 20px;
+        color: gray;
+        border: none;
+        text-decoration: none;
+        width: max-content;
+        transition: 0.5s;
+        &:hover{
+            color: white;
+        }
+    }
+}
+.map{
+    li{
+        color: white;
+        
+    }
+    margin-bottom: 30px;
+}
+.btn{
+    width: max-content;
+    padding: 10px 45px;
+    color: #E73AB8;
+    background-color: white;
+    border: 1px solid #E73AB8;
+    border-radius: 10px;
+}
