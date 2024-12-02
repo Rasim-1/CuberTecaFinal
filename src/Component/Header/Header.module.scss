@@ -1,51 +1,79 @@
-.header{
-    background-image: url(/HeaderLogo1.png);
+.header {
+    background-image: url(/HeaderLogo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: #E73AB8;
- 
+    // background-color: #E73AB8;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+
+//    &::before {
+//     content: '';
+//     position: absolute;
+// width: 100%;
+// height: 100%;
+// left: 0;
+// top: 0;
+//         z-index: 1;
+
+//      background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #35005f 100%);;
+
+//     }
 }
-.wrapper{
-    
-    
+
+.wrapper {
+
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    
+
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: column;
     margin-left: 80px;
 
 }
 
-.box__logo{
-  display: flex;
+.box__logo {
+    display: flex;
     max-width: 300px;
     gap: 20px;
-    h1{
-color: white;
+    margin-bottom: 20px;
+text-align: center;
+align-items: center;
+
+    h1 {
+        color: white;
+        width: max-content;
+        font-size: 30px;
     }
-    Span{
-    font-style: italic;
-    font-weight: 800;
-    font-size: 50px;
+
+    Span {
+        font-style: italic;
+        font-weight: 800;
+        font-size: 50px;
     }
 }
-.logo{
+
+.logo {
     width: 100px;
 
 }
-.menu{
+
+.menu {
     display: flex;
     writing-mode: vertical-rl;
     width: max-content;
     padding-top: 80px;
     padding-bottom: 100px;
 
-    a{
+    a {
         padding: 20px;
         font-size: 20px;
         color: gray;
@@ -53,19 +81,28 @@ color: white;
         text-decoration: none;
         width: max-content;
         transition: 0.5s;
-        &:hover{
+
+        &:hover {
             color: white;
         }
     }
 }
-.map{
-    li{
+
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
         color: white;
-        
+        font-size: 20px;
+
+
     }
+
     margin-bottom: 30px;
 }
-.btn{
+
+.btn {
     width: max-content;
     padding: 10px 45px;
     color: #E73AB8;
@@ -73,3 +110,13 @@ color: white;
     border: 1px solid #E73AB8;
     border-radius: 10px;
 }
+
+@keyframes anim-robot {
+    0% {
+        background-image: url();
+    }
+    100% {
+        background-image: url();
+    }
+}
+

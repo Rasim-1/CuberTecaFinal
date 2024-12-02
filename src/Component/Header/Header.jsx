@@ -6,6 +6,7 @@ const Header = () => {
   return (
 <>
 <section className={s.header}>
+
     <div className="container">
         <div className={s.wrapper}>
         <nav className={s.menu}>
@@ -33,8 +34,9 @@ const Header = () => {
         </div>
 
         </div>
+                
     </div>
-</section>
+    </section>
 
 
 
