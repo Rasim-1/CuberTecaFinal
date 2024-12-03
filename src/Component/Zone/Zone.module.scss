@@ -2,42 +2,50 @@
     background-image: url(/background2.png);
     background-color: #1a1a1a;
     background-position: center;
-
-    padding: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    // margin-bottom: 20px;
 }
 
 .wrapp {
+   
 
     border-radius: 20px;
 // border-top: 20px;
-    border: 3px solid white;
-    
-    h2 {
+margin-left: 40px;
+margin-right: 40px;
+margin-top: 20px;
+border: 3px solid white;
 
+h2 {
+        
         padding: 10px;
+        padding-top:80px;
         font-weight: 400;
         font-size: 43px;
         text-transform: uppercase;
         text-align: center;
         color: #fff;
-
-        
-        background-color: #1a1a1af0;
+        // background-color: #1a1a1a;
         border-radius: 20px;
-        width: max-content;
+        width: max-content ;
         margin: 0 auto;
-        margin-top: -30px;
+        margin-top: -40px;
         line-height: 1;
     }
 
 
 }
 .cards{
-    padding-top: 80px;
+    padding-top: 50px;
     display: flex;
     justify-content: space-around;  
     gap: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .card {
     max-width: 350px;
@@ -108,7 +116,7 @@
     &:nth-child(1){
         &:hover{
             box-shadow: 0 0 15px 0 #e637b7;
-            transform: translateY(-45px)
+            transform: translateY(-25px)
             
         }
         img{
@@ -122,7 +130,7 @@
     &:nth-child(2){
         &:hover{
             box-shadow: 0 0 15px 0 #149EF2;
-            transform: translateY(-45px)
+            transform: translateY(-25px)
             
         }
         img{
@@ -136,7 +144,7 @@
     &:nth-child(3){
         &:hover{
             box-shadow: 0 0 15px 0 rgba(58, 78, 255, 1);
-            transform: translateY(-45px)
+            transform: translateY(-25px)
             
         }
         img{
@@ -148,20 +156,5 @@
         }
     }
 }
-
- .image{
-     &:nth-child(1){
-
-    }
-     &:nth-child(2){
-
-    }
-
-
-
-     &:nth-child(3){
-
-    }
- }
         
 

@@ -1,13 +1,15 @@
 import React from 'react'
-import Header from '../Component/Header/Header'
 import Zone from '../Component/Zone/Zone'
+import Slider from '../Component/Slider/Slider'
+import Header from '../Component/Header/Header'
 
 const Home = () => {
   return (
  <>
+ 
+ <Header/>
  <Zone/>
- 
- 
+ <Slider/>
  </>
   )
 }
