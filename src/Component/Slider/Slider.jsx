@@ -1,43 +1,42 @@
-import React from 'react'
-import s from './Slider.module.scss'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import s from './Slider.module.scss';
 
 const Slider = () => {
+  // Добавляем массив с изображениями
+  const slides = [
+    '/slides1.jpg',
+    '/slides2.jpg',
+    '/slides3.jpg',
+    '/slides4.jpg',
+    '/slides5.jpg',
+    '/slides6.jpg',
+  ];
+
   return (
- <>
- <div className={s.slider}>
-    <div className={s.wrapper}>
     <div className={s.slider}>
-      <div className={s.slides}>
-        <div className={s.slide}>
-          <img className={s.imgSlide} src="/slides1.jpg" alt="Image 1"/>
-          </div>
-        <div className={s.slide}>
-          <img className={s.imgSlide} src="/slides2.jpg" alt="Image 2"/>
-          </div>
-        <div className={s.slide}>
-          <img className={s.imgSlide} src="/slides3.jpg" alt="Image 3"/>
-          </div>
-
-        <div className={s.slide}>
-          <img className={s.imgSlide} src="/slides4.jpg" alt="Image 4"/>
-          </div>
-        <div className={s.slide}>
-          <img className={s.imgSlide} src="/slides5.jpg" alt="Image 5"/>
-          </div>
-        <div className={s.slide}>
-          <img className={s.imgSlide} src="/slides6.jpg" alt="Image 6"/>
-          </div>
-      </div>
-      <button className={s.prev}>&#10094;</button>
-      <button className={s.next}>&#10095;</button>
+      <Swiper
+        modules={[Navigation, Pagination]}
+        spaceBetween={100} // Расстояние между слайдами
+        slidesPerView={1.5} // Количество видимых слайдов
+        centeredSlides={true} // Центральный слайд
+        navigation // Включаем стрелки
+        pagination={{ clickable: true }} // Включаем пагинацию
+        loop={true}
+        initialSlide={1} // Начинаем со второго слайда (индекс 1)
+      >
+        {slides.map((img, index) => (
+          <SwiperSlide key={index}>
+            <img src={img} alt={`Slide ${index + 1}`} className={s.slideImage} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
-    </div>
- </div>
- 
- 
- 
- </>
-  )
-}
+  );
+};
 
-export default Slider
+export default Slider;

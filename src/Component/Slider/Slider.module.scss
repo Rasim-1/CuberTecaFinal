@@ -1,73 +1,53 @@
-
-
-
 .slider {
-    // display: none;
-    position: relative;
-    background-image: url(/slider.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-   
-    width: 100%;
-    @media (max-width: 800px) {
-      display: flex;
-      height: 100px;
-    }
-  }
+
+  margin: 0 auto;
+  background-image: url(/background2.png);
+  width: 100%;
+  background-color: #0E0E0E;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
   
-  .slides {
-    display: flex;
-    
-    transition: transform 0.5s ease;
-    margin-left: 75px;
-    margin-right: 75px;
-    overflow: hidden;
-  }
   
-  .slide {
-    min-width: 100%;
-    height: 500px;
+  .swiper {
+    overflow: visible;
+  padding-bottom: 50px !important;
+  }
+
+  .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 800px) {
-      height: 100px;
-    }
-   
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
   }
-  
-  .slide img {
+
+  .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+  }
+
+  .slideImage {
+    max-width: 900px;
     width: 100%;
-    /* height: 100%; */
-    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
-  
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #251607;
-    color: #e69aaa;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    font-size: 24px;
-    @media (max-width: 800px) {
-      padding: 5px 10px;
-      font-size: 16px;
-    }
+
+  .Swiper-button-next,
+  .swiper-button-prev {
+    color: #000;
   }
-  
-  .prev {
-    left: 10px;
+
+  .swiper-pagination-bullet {
+    // background-color: ; 
+    opacity: 0.7;
   }
-  
-  .next {
-    right: 10px;
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+
   }
-  
-  .slider{
-    background-image: url(/slider.png);
-  }
+}

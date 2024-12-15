@@ -1,15 +1,16 @@
 import React from 'react'
 import Zone from '../Component/Zone/Zone'
 import Slider from '../Component/Slider/Slider'
-import Header from '../Component/Header/Header'
+import Bronya from '../Component/Bronya/Bronya'
 
 const Home = () => {
   return (
  <>
  
- <Header/>
+
  <Zone/>
  <Slider/>
+ <Bronya />
  </>
   )
 }

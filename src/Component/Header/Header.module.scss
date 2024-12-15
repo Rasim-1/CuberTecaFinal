@@ -1,20 +1,23 @@
 .header {
-    background-image: url(/HeaderLogo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
     width: 100%;
     position: relative;
+   
 }
-
+section{
+    
+}
 .wrapper {
     position: absolute;
-    top: 200px;
-    right: 1100px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    top: 25%;
+    right: 90deg;
+
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 }
 
 
@@ -28,23 +31,25 @@
 
 .box__logo {
     display: flex;
+
+    // flex-direction: column;
     max-width: 300px;
     gap: 20px;
     margin-bottom: 20px;
     text-align: center;
-    align-items: center;
+    align-items: start;
 
     h1 {
         color: white;
         width: max-content;
         font-size: 30px;
     }
-
     Span {
         font-style: italic;
         font-weight: 800;
         font-size: 50px;
     }
+
 }
 
 .logo {
@@ -77,12 +82,7 @@
     background-color: white;
     border-radius: 10px;
     transition: 1s;
-
-    &:hover {
-        color: #E73AB8;
-        border: 1px solid #E73AB8;
-        box-shadow: 0 0 10px 0 #E73AB8;
-    }
+    border: none;
 }
 
 // @keyframes anim-robot {

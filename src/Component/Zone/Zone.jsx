@@ -1,5 +1,6 @@
 import React from 'react'
 import s from './Zone.module.scss'
+import Card from '../Card/Card'
 
 const Zone = () => {
   return (
@@ -7,31 +8,15 @@ const Zone = () => {
    <div className={s.zone}>
     <div className="container">
         <div className={s.wrapp}>
-            <h2>разные зоны с разными условиями</h2>
+            <h2>разные зоны <span>с разными условиями</span></h2>
             <div className={s.cards}>
-              <div className={s.card}>
-                <p>Игровой ПК и переферия</p>
-                <h3>Стандарт</h3>
-                <img className={s.image} src="/card1.png" alt="" />
-                <h4>Общая Зона</h4>
-                <a href="">Подробнее → </a>
-              </div>
+         
+              <Card comp={"Игровой ПК и перферия"} name={"Стандарт"} img={"/card1.png"} text={"Общая Зона"} />
 
-              <div className={s.card }>
-                <p>Монитор больше + ПК мощнее</p>
-                <h3>Стандарт+</h3>
-                <img className={s.image} src="/card2.png" alt="" />
-                <h4>Лучшие Места</h4>
-                <a href="">Подробнее → </a>
-              </div>
-              
-              <div className={s.card}>
-                <p>Подписка PS+ и 2 геймпада</p>
-                <h3>ПРИСТАВКА</h3>
-                <img className={s.image} src="/card3.png" alt="" />
-                <h4>Диван + PS5</h4>
-                <a href="">Подробнее → </a>
-              </div>
+              <Card img={"/card2.png"} comp={"Монитор больше + ПК мощнее"} name={"Стандарт+"} text={"Лучшие Места"}  />
+
+              <Card comp={"Подписка PS+ и 2 геймпада"} name={"ПРИСТАВКА"} img={"/card3.png"} text={"Диван + PS5"} />
+            
             </div>
         </div>
     </div>

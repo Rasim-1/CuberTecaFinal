@@ -1,0 +1,102 @@
+.Preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Черный фон */
+  z-index: 9999;
+}
+
+.container {
+  text-align: center;
+}
+
+.logoText {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+  
+  // rotate: 5deg;
+}
+
+.loader {
+  display: flex;
+  justify-content: space-between;
+  width: 360px; /* Увеличиваем ширину контейнера для большего количества палочек */
+  align-items: flex-end; /* Размещаем палочки у основания */
+}
+
+.bar {
+  width: 6px; /* Ширина палочек */
+  height: 20px; /* Начальная высота палочек */
+  background-color: #fff; /* Белый цвет палочек */
+  opacity: 0;
+  transform: rotate(10deg); /* Легкий наклон палочек */
+  animation: barAnimation 1s forwards;
+  transition: box-shadow 0.5s ease, transform 0.5s ease; /* Плавное добавление box-shadow */
+}
+
+@keyframes barAnimation {
+  0% {
+    opacity: 0;
+    transform: rotate(10deg) scaleY(0); /* Начальный наклон и масштаб */
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(10deg) scaleY(1.2); /* Палочки увеличиваются */
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(10deg) scaleY(1); /* Палочки становятся нормальными */
+  }
+}
+
+@keyframes moveUpAndDown {
+  0% {
+    transform: rotate(10deg) scaleY(1); /* Обычное положение */
+  }
+  50% {
+    transform: rotate(10deg) scaleY(1.2) translateY(-20px); /* Поднимаем палочки вверх */
+  }
+  100% {
+    transform: rotate(10deg) scaleY(1) translateY(0); /* Возвращаем в исходное положение */
+  }
+}
+
+/* Анимация подсветки и мерцания */
+@keyframes glowEffect {
+  0% {
+    box-shadow: 
+      0 0 20px 10px rgba(255, 255, 255, 0.9),
+      0 0 25px 15px rgba(255, 255, 255, 0.8),
+      0 0 30px 20px rgba(255, 255, 255, 0.6);
+  }
+  33% {
+    box-shadow: 
+      0 0 40px 20px rgba(255, 255, 255, 1),
+      0 0 50px 25px rgba(255, 255, 255, 0.9),
+      0 0 60px 30px rgba(255, 255, 255, 0.8);
+  }
+  66% {
+    box-shadow: 
+      0 0 60px 30px rgba(255, 255, 255, 1),
+      0 0 70px 35px rgba(255, 255, 255, 0.9),
+      0 0 80px 40px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 
+      0 0 20px 10px rgba(255, 255, 255, 0.9),
+      0 0 25px 15px rgba(255, 255, 255, 0.8),
+      0 0 30px 20px rgba(255, 255, 255, 0.6);
+  }
+}
+
+.complete {
+  transform: rotate(10deg) scaleY(1.2); /* Палочки увеличиваются по завершению */
+  animation: moveUpAndDown 0.5s ease-in-out forwards, glowEffect 1s 3; /* Анимация подъема и мерцания */
+}

@@ -1,0 +1,115 @@
+.cards {
+
+  place-items: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 10px;
+  width: max-content;
+  // background-color: #0E0E0E;
+  border: 3px solid gray;
+  border-radius: 20px;
+}
+
+.carda {
+   
+background-color: #0E0E0E;
+ 
+  margin: -10px;
+}
+
+.text {
+  // text-align: center;
+
+  p {
+    font-size: 25px;
+
+  }
+}
+
+.form {
+
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  width: max-content;
+  padding-left: 50px;
+
+  padding-bottom: 60px;
+
+  input {
+    width: max-content;
+    border: none;
+    border-radius: 7px;
+    // padding-left: 100px;
+    //   margin-left: 30px;
+    background-color: #030303;
+    color: white;
+  }
+
+  input {
+    &:nth-child(1) {
+      width: 100px;
+    }
+
+    &:nth-child(2) {
+      width: 100px;
+    }
+
+    &:nth-child(3) {
+      width: 100px;
+
+    }
+
+    &:nth-child(4) {
+
+      padding: 10px 25px;
+    }
+
+    &:nth-child(5) {
+
+      padding: 15px 20px;
+    }
+
+    &:nth-child(6) {
+      padding: 30px 20px;
+      margin-bottom: 70px;
+    }
+  }
+}
+
+.text {
+
+
+  color: white;
+}
+
+.btn {
+  button {
+
+    width: max-content;
+    padding: 10px 50px;
+    color: gray;
+    background-color: white;
+    border-radius: 10px;
+    transition: 1s;
+    border: none;
+  }
+
+
+}
+
+.box {
+  display: flex;
+  gap: 10px;
+}

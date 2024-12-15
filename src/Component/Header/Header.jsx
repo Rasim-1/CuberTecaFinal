@@ -1,29 +1,32 @@
 import React from 'react'
 import s from './Header.module.scss'
+import NavMenu from '../NavMenu/NavMenu'
 
 
-const Header = () => {
+const Header = ({logo, location, adres, num, bg, color }) => {
   return (
 <>
-<section className={s.header}>
+<NavMenu/>
+
+<section className={`${s.header} ${bg}`} >
 
     <div className="container">
         <div className={s.wrapper}>
             
         <div className={s.box}>
         <div className={s.box__logo}>
-            <img className={s.logo} src="/logo.png" alt=""  />
-            <h1> <span>КИБЕРТЕКА</span> НА ПРОФСОЮЗНОЙ</h1>
+            <img className={s.logo} src={logo} alt=""  />
+            <h1> <span>КИБЕРТЕКА</span> {location}</h1>
         </div>
         <div className={s.map}>
            
-            <p>‣  Профсоюзная улица 22/10к1</p>
+            <p>‣  {adres}</p>
             <p>‣  Работаем круглосуточно!</p>
-            <p>‣  8 977 320 88 88</p>
+            <p>‣  {num}</p>
            
 
         </div>
-        <button className={s.btn}>Забронировать!</button>
+        <button className={`${s.btn} ${color}`}>Забронировать!</button>
         </div>
 
         </div>

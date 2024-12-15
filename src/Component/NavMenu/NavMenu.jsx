@@ -8,10 +8,11 @@ const NavMenu = () => {
    <div className={s.wrapp}>
     <nav className={s.menu}>
         <Link to="/">Главная</Link>
-        <Link to="/zona">Зона</Link>
-        <Link to="/price">Цена</Link>
-        <Link to="/images">Фото</Link>
-        <Link to="/contact">Контакты</Link>
+        <Link to="/zonaPage">Зона</Link>
+        <Link to="/pricePage">Цена</Link>
+        <Link to="/imagesPage">Фото</Link>
+        <Link to="/contactPage">Контакты</Link>
+        <Link to="/SaytsPage">3D </Link>
     </nav>
    
    </div>

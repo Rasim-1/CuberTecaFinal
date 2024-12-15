@@ -1,0 +1,75 @@
+.zonastart {
+    background-image: url(/startzone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+height: 100dvh;
+    width: 100%;
+    background-color: #1f1f1f;
+    
+}
+
+.wrap {
+    font-weight: 900;
+    font-size: 90px;
+    text-transform: uppercase;
+    color: #fff;
+  
+}
+
+.box{
+    border: 3px solid rgba(255, 255, 255, 0.05);
+border-radius: 5px;
+    padding-top: -15px;
+
+}
+
+.har {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.card {
+   padding:  10px;
+    text-align: center;
+    color: white;
+    background-color: #1f1f1f;
+    width: max-content;
+    border-radius: 15px;
+    
+}
+
+.text2 {
+
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.text1 {
+    padding-top: 15px;
+}
+
+
+  
+.image{
+    padding: 19px;
+}
+
+
+
