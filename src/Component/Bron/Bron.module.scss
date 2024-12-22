@@ -1,31 +1,36 @@
 .cards {
 
-  place-items: center;
-  align-items: center;
-  margin: 0 auto;
+  // place-items: center;
+  // align-items: center;
+  // margin: 0 auto;
 }
 
 .card {
   
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding: 10px;
+  // align-items: center;
+  place-items: center;
+  margin:  10px;
   width: max-content;
   // background-color: #0E0E0E;
-  border: 3px solid gray;
+  padding: 15px;
+  border: 3px solid #ffffff5d ;
   border-radius: 20px;
-}
-
-.carda {
-   
-background-color: #0E0E0E;
  
-  margin: -10px;
+@media (max-width: 1000px) {
+  grid-template-columns: 1fr;
+}
+}
+.carda{
+  border-radius: 20px;
+  background-color: #0E0E0E;
+  opacity: 0.9;
+  padding: 20px;
 }
 
 .text {
-  // text-align: center;
+
 
   p {
     font-size: 25px;
@@ -45,7 +50,7 @@ background-color: #0E0E0E;
   width: max-content;
   padding-left: 50px;
 
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 
   input {
     width: max-content;
@@ -59,6 +64,7 @@ background-color: #0E0E0E;
 
   input {
     &:nth-child(1) {
+     padding: 10px;
       width: 100px;
     }
 
@@ -83,7 +89,7 @@ background-color: #0E0E0E;
 
     &:nth-child(6) {
       padding: 30px 20px;
-      margin-bottom: 70px;
+      margin-bottom: 20px;  
     }
   }
 }
@@ -103,7 +109,7 @@ background-color: #0E0E0E;
     background-color: white;
     border-radius: 10px;
     transition: 1s;
-    border: none;
+    border: 1px solid white;
   }
 
 

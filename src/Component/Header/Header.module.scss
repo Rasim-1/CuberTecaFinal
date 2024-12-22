@@ -10,7 +10,7 @@
 section{
     
 }
-.wrapper {
+.wrapper {   
     position: absolute;
     top: 25%;
     right: 90deg;
@@ -82,7 +82,7 @@ section{
     background-color: white;
     border-radius: 10px;
     transition: 1s;
-    border: none;
+    border: 1px solid white;
 }
 
 // @keyframes anim-robot {

@@ -47,7 +47,7 @@ const Bron = ({ color }) => {
       });
 
       if (response.ok) {
-        console.log('Бронирование отправлено!');
+        alert('Вам скоро позвонят, чтобы узнать доп информацию!');
         
       } else {
         const errorData = await response.json();
@@ -62,7 +62,8 @@ const Bron = ({ color }) => {
 
   return (
     <>
-      <div className={s.cards}>
+      <div className={s.cards }  data-aos="zoom-in-down" 
+          data-aos-delay="100">
           <div className={s.carda}>
         <div className={s.card}>
 

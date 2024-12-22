@@ -3,12 +3,17 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #000; /* Черный фон */
-  z-index: 9999;
+  background-image: url("gif.gif");
+  // background-image: url('https://c.tenor.com/xmEBvpclwvgAAAAC/tenor.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 100;
 }
 
 .container {
@@ -34,7 +39,7 @@
 .bar {
   width: 6px; /* Ширина палочек */
   height: 20px; /* Начальная высота палочек */
-  background-color: #fff; /* Белый цвет палочек */
+  background-color: #E73AB8; /* Белый цвет палочек */
   opacity: 0;
   transform: rotate(10deg); /* Легкий наклон палочек */
   animation: barAnimation 1s forwards;
@@ -56,17 +61,7 @@
   }
 }
 
-@keyframes moveUpAndDown {
-  0% {
-    transform: rotate(10deg) scaleY(1); /* Обычное положение */
-  }
-  50% {
-    transform: rotate(10deg) scaleY(1.2) translateY(-20px); /* Поднимаем палочки вверх */
-  }
-  100% {
-    transform: rotate(10deg) scaleY(1) translateY(0); /* Возвращаем в исходное положение */
-  }
-}
+
 
 /* Анимация подсветки и мерцания */
 @keyframes glowEffect {
@@ -88,13 +83,21 @@
       0 0 70px 35px rgba(255, 255, 255, 0.9),
       0 0 80px 40px rgba(255, 255, 255, 0.8);
   }
-  100% {
+  10% {
     box-shadow: 
       0 0 20px 10px rgba(255, 255, 255, 0.9),
       0 0 25px 15px rgba(255, 255, 255, 0.8),
       0 0 30px 20px rgba(255, 255, 255, 0.6);
   }
 }
+.progress {
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
 
 .complete {
   transform: rotate(10deg) scaleY(1.2); /* Палочки увеличиваются по завершению */

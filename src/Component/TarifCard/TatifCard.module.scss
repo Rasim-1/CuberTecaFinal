@@ -1,17 +1,27 @@
 .box{
     border-radius: 5px;
     padding-top: -15px;
-
+img{
+    max-width: 80px;
+    object-fit: contain;
+    aspect-ratio: 1;
+    width: 100%;
+}
 }
 .card {
+//    height: 220px;
    padding:  10px;
     text-align: center;
     color: white;
     background-color: #1f1f1f;
+
     width: max-content;
     border-radius: 15px;
+    max-width: 160px;
+    width: 100%;
     
 }
+
 
 
 .text2 {
@@ -26,9 +36,7 @@
 }
 
 .text1 {
-    padding: 10px;
-    padding-top: 15px;
-    
+margin: 10px;
 }
 
 .text3{
@@ -48,6 +56,7 @@ text-transform: uppercase;
 color: #fff;
 padding: 10px;
 }
+
 ///color: rgba(255, 152, 216, 0.5);
 /// color: rgba(255, 114, 201, 0.6);
 /// color: rgba(255, 76, 187, 0.7);

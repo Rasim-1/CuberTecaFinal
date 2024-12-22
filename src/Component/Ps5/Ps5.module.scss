@@ -1,31 +1,42 @@
 .ps5{
-    background-image: url(/fonps5.svg);
+    background-image: url(/backgroundPs5.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    width: 100%;
+// padding-left: 50px;
     background-color: #1f1f1f;
+    display: flex;
+align-items: center;
+@media (max-width: 1400px) {
+  
+    // padding-left: 150px;
+}
+}
+.wrapper{
+ display: flex;
+ justify-content: space-between;
+place-items: center;
 
+@media (max-width: 1400px) {
+  grid-template-columns: 1fr;
+}
 }
 
 
 
-.wrap {
-    padding-top: 170px;
-    padding-bottom: 30px;
+.text{
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 90px;
     text-transform: uppercase;
     color: #fff;
+@media (max-width: 1400px) {
+  font-size: 40px;
+}
 }
 
-.box{
-    border: 3px solid rgba(255, 255, 255, 0.05);
-border-radius: 5px;
-    padding-top: -15px;
 
-}
 
 .title {
     font-weight: 600;
@@ -37,13 +48,26 @@ border-radius: 5px;
 }
 
 .cards{
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 35px;
+    flex-wrap: wrap;
+@media (max-width: 1400px) {
+  grid-template-columns: repeat(2,1fr);
+}
+@media (max-width: 1000px) {
+  grid-template-columns: 1fr;
+}
+}
+.boxs{
+ margin-right: 60px;
 }
 
 .card {
-   padding:  10px;
+   padding:  8px;
     text-align: center;
     color: white;
     background-color: #1f1f1f;
@@ -55,8 +79,8 @@ border-radius: 5px;
 .text2 {
     
     font-weight: 400;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
@@ -64,7 +88,7 @@ border-radius: 5px;
 }
 
 .text1 {
-    padding: 10px;
+    padding: 7px;
     padding-top: 15px;
     
 }
@@ -81,5 +105,5 @@ color: rgba(255, 255, 255, 0.3);
 font-size: 20px;
 text-transform: uppercase;
 color: #fff;
-padding: 10px;
+padding: 7px;
 }

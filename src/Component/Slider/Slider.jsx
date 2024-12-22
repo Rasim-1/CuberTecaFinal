@@ -1,10 +1,11 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import s from './Slider.module.scss';
+import { delay } from 'framer-motion';
 
 const Slider = () => {
   // Добавляем массив с изображениями
@@ -20,11 +21,13 @@ const Slider = () => {
   return (
     <div className={s.slider}>
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Autoplay, Pagination]}
         spaceBetween={100} // Расстояние между слайдами
         slidesPerView={1.5} // Количество видимых слайдов
         centeredSlides={true} // Центральный слайд
-        navigation // Включаем стрелки
+        autoplay={
+          {delay:2500}
+        }
         pagination={{ clickable: true }} // Включаем пагинацию
         loop={true}
         initialSlide={1} // Начинаем со второго слайда (индекс 1)

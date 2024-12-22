@@ -1,7 +1,8 @@
 import React from "react";
 import s from "./Card.module.scss";
+import { Link } from "react-router-dom";
 
-const Card = ({comp, name, img, text, color}) => {
+const Card = ({comp, name, img, text, color, href}) => {
   return (
     <>
       <div className={s.card}>
@@ -9,7 +10,7 @@ const Card = ({comp, name, img, text, color}) => {
         <h3>{name}</h3>
         <img className={s.image} src={img} alt="" />
         <h4>{text}</h4>
-        <a href="" className={color}>Подробнее → </a>
+        <Link to={href} className={color}>Подробнее → </Link>
       </div>
     </>
   );
